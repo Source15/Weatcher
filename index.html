@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Погода</title>
+</head>
+
+<body>
+  <section class="weatcher">
+    <div class="weatcher__inner">
+      <div class="container">
+        <form class="aktobe">
+          <input type="text" placeholder="Aktobe" class="aktobe__input">
+          <img src="img/Shape.svg" alt="search" class="search__img">
+        </form>
+        <div class="location__inner">
+          <div class="left__blog">
+            <div class="tabs__inner">
+              <div id="tab-01" class="tabs__block nowTemp">
+                <div class="now__temperature">
+                  <h1>14°</h1>
+                </div>
+                <div class="now__icon">
+                  <img class="now__icon-img" src="img/unknown.png" alt=" imageCloud" />
+                </div>
+                <div class="now__city">
+                  <span>Aktobe</span>
+                  <img class="now__city-img" src="img/Hearts.svg" alt="imageHearts">
+                </div>
+              </div>
+
+              <div id="tab-02" class="tabs__block details hidden">
+                <div class="details__city">
+                  <h1>Aktobe</h1>
+                </div>
+                <ul class="details__list">
+                  <li class="details__list-item" id="details__temperature">Temperature: 14°</li>
+                  <li class="details__list-item" id="details__feels-like">Feels like: 10</li>
+                  <li class="details__list-item" id="details__feels-weather">Weather: Clouds</li>
+                  <li class="details__list-item" id="details__sunrise">Sunrise: 03:21</li>
+                  <li class="details__list-item" id="details__sunset">Sunset: 18:54</li>
+                </ul>
+              </div>
+
+              <div id="tab-03" class="tabs__block forecast hidden">
+                <div class="forecast__city">
+                  <h1>Aktobe</h1>
+                </div>
+                <div class="forecast__list">
+                  <div class="forecast__item">
+                    <div class="forecast__time">
+                      <span>17 May</span>
+                      <span>12:00</span>
+                    </div>
+                    <div class="forecast__weather">
+                      <div class="forecast__temperature">
+                        <span>Temperature: 13°</span>
+                        <span>Feels like: 10</span>
+                      </div>
+                      <div class="forecast__icon">
+                        <span>Rain</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="forecast__item">
+                    <div class="forecast__time">
+                      <span>17 May</span>
+                      <span>13:00</span>
+                    </div>
+                    <div class="forecast__weather">
+                      <div class="forecast__temperature">
+                        <span>Temperature: 13°</span>
+                        <span>Feels like: 10</span>
+                      </div>
+                      <div class="forecast__icon">
+                        <span>Rain</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="forecast__item">
+                    <div class="forecast__time">
+                      <span>17 May</span>
+                      <span>14:00</span>
+                    </div>
+                    <div class="forecast__weather">
+                      <div class="forecast__temperature">
+                        <span>Temperature: 13°</span>
+                        <span>Feels like: 10</span>
+                      </div>
+                      <div class="forecast__icon">
+                        <span>Rain</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="forecast__item">
+                    <div class="forecast__time">
+                      <span>17 May</span>
+                      <span>15:00</span>
+                    </div>
+                    <div class="forecast__weather">
+                      <div class="forecast__temperature">
+                        <span>Temperature: 13°</span>
+                        <span>Feels like: 10</span>
+                      </div>
+                      <div class="forecast__icon">
+                        <span>Rain</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="forecast__item">
+                    <div class="forecast__time">
+                      <span>17 May</span>
+                      <span>15:00</span>
+                    </div>
+                    <div class="forecast__weather">
+                      <div class="forecast__temperature">
+                        <span>Temperature: 13°</span>
+                        <span>Feels like: 10</span>
+                      </div>
+                      <div class="forecast__icon">
+                        <span>Rain</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+            <nav class="tabs__items">
+              <li data-tab="tab-01" class="tabs-item now"><span>Now</span></li>
+              <li data-tab="tab-02" class="tabs-item center"><span>Details</span></li>
+              <li data-tab="tab-03" class="tabs-item "><span>Forecast</span></li>
+            </nav>
+          </div>
+          <div class="right__blog">
+            <div class="right__blog-title">
+              Added Locations:
+            </div>
+            <ul class="list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
